@@ -1,0 +1,92 @@
+﻿body {
+    background-color: #009941;
+}
+
+body, table, tr, td {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    border: 1px solid black;
+}
+
+    body table {
+        border-radius: 15px;
+        margin: 250px auto;
+        border-collapse: collapse;
+    }
+
+        body table thead tr th {
+            font-size: 1.3em;
+            background-color: #F8C711;
+            height: 40px;
+            border: 1px solid black;
+        }
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+td.group, td.result {
+    text-align: center;
+}
+
+tr:last-child > td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child > td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+img {
+    height: 15px;
+}
+
+tr:nth-child(2n) {
+    background-color: #C8C8C8;
+}
+
+tr:nth-child(2n-1) {
+    background-color: white;
+}
+
+button.can-bet {
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    height: 30px;
+    font-size: 10px;
+}
+
+button.cant-bet {
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    height: 30px;
+    font-size: 10px;
+}
+
+td {
+    height: 40px;
+    padding: 5px;
+}
+
+tr > td:first-child, th:first-child {
+    text-align: right;
+}
+
+td.right-aling-country {
+    text-align: right;
+}
+
+td.cant-bet-result select option {
+    color: red;
+}
+
+td.can-bet-result select option {
+    color: green;
+}

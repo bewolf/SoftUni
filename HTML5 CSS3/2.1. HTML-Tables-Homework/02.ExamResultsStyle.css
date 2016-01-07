@@ -1,0 +1,10 @@
+﻿body{
+    font-size:18px;
+}
+body > table > tbody > tr > td, body > table > thead > tr > th, body > table > tfoot > tr > td, body > table > tbody > tr > th {
+    border:1px solid black;
+    width:15%;
+}
+body > table > tfoot > tr > td {
+    text-align:right;
+}

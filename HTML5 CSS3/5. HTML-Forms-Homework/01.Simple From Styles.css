@@ -1,0 +1,114 @@
+﻿body {
+    margin:0;
+    padding:0;
+    font-family:
+
+}
+#wrapper{
+    width:960px;
+    margin:0 auto;
+    padding:15px;
+    background:#EEEEEE;
+    height:500px;
+}
+h1{
+    color:#234465;
+}
+p{
+    color:#A1A1A1;
+}
+#register-form{
+    margin:0;
+    width:47%;
+    float:left;
+    padding:10px;
+}
+#register-form form fieldset{
+    border:0;
+}
+#register-form legend {
+    font-weight:bold;
+    color:#585858;
+    font-size:1.2em;
+}
+#register-form span {
+    color:#234465;
+    font-weight:bold;
+}
+#register-form input {
+    width:95%;
+    margin-bottom:5px;
+    border:2px solid #E5E5E5;
+    padding:5px;
+}
+#register-form-button-holder {
+    width:45%;
+    float:right;
+    margin-right:10px;
+}
+button{
+    width:100%;
+    height:35px;
+    color:#234465;
+    border:3px solid #234465;
+    background:#eee;
+    font-size:18px;
+}
+button:hover{
+    border:0;
+    background:#234465;
+    color:white;
+}
+#login-form{
+    width:47%;
+    margin:0;
+    padding:10px;
+    float:right;
+}
+#login-form fieldset{
+    border:0;
+}
+#login-form form {
+    background:#234465;
+}
+#login-form form {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#login-form legend {
+    font-size:1.2em;
+    font-weight:bold;
+    color:white;
+}
+ input {
+    width:95%;
+    margin-bottom:5px;
+    padding:5px;
+}
+#login-form-button-holder{
+    width:100%;
+    text-align:right;
+}
+#login-form-button-holder button{
+    border:3px solid #E1900E;
+    width:30%;
+    margin-right:10px;
+}
+#forgot-pass {
+    margin-top:5px;
+    text-align:right;
+    padding-right:20px;
+}
+a {
+    color:white;
+
+}
+a:hover{
+    text-decoration:none;
+}
+#remember-me {
+    width:15px;
+}
+label{
+    color:white;
+}

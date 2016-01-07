@@ -1,0 +1,49 @@
+﻿body {
+}
+#wrapper {
+    width:500px;
+    margin:0 auto;
+    background:pink;
+}
+h1{
+    text-align:center;
+    font-weight:bold;
+    font-style:italic;
+}
+label{
+    display:block;
+    width:95%;
+    font-style:italic;
+}
+fieldset{
+    border:0;
+}
+#from-city, #to-city, #from-date, #to-date, #class {
+    width:100%;
+}
+#12plus, #to2, #from2to12{
+    display:block;
+    width:30%; 
+    float:left;
+}
+label#12plus-label, #from2to12-label, #to2-label {
+    display:block;
+    width:30%;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+#from-city, #from-city-label {
+    float:left;
+}
+#from{
+    width:49%;
+    float:left;
+}
+#search-button {
+    display:block;
+    height:30px;
+    width:100%;
+    margin-top:5px;
+}

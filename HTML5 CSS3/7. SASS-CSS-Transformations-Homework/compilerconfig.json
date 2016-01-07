@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "styles/styles.css",
+    "inputFile": "styles/styles.scss"
+  },
+  {
+    "outputFile": "styles/01.Gradient-City.css",
+    "inputFile": "styles/01.Gradient-City.scss"
+  },
+  {
+    "outputFile": "styles/02.Crazy Shaky Gallery.css",
+    "inputFile": "styles/02.Crazy Shaky Gallery.scss"
+  }
+]

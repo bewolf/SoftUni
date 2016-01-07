@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "resources/Problem-01/styles.css",
+    "inputFile": "resources/Problem-01/styles.scss"
+  },
+  {
+    "outputFile": "resources/Problem-01/styles/styles.css",
+    "inputFile": "resources/Problem-01/styles/styles.scss"
+  },
+  {
+    "outputFile": "resources/Problem-02/styles/styles.css",
+    "inputFile": "resources/Problem-02/styles/styles.scss"
+  },
+  {
+    "outputFile": "resources/Problem-02/styles/styles-02.css",
+    "inputFile": "resources/Problem-02/styles/styles-02.scss"
+  }
+]

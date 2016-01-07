@@ -1,0 +1,76 @@
+﻿body, h3, ul {
+    margin: 0;
+    padding: 0;
+    font-family: "LatoBlack","Arial","Helvetica",sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    background: #234465;
+    padding: 50px;
+    height: 150px;
+}
+
+#fast-buttons, #about-uni, #our-friends, #suls {
+    width: 15%;
+    float: left;
+}
+
+button {
+    float: left;
+    width: 60%;
+    height: 55px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid orange;
+    background: none;
+    color: #9CB8C8;
+    font-weight: bold;
+}
+
+    button:hover {
+        color: #234465;
+        background: #9CB8C8;
+    }
+
+h3 {
+    color: orange;
+    margin-bottom: 15px;
+}
+
+#about-uni ul, #our-friends ul {
+    list-style-type: none;
+    color: #9CB8C8;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+    li:hover {
+        color: white;
+    }
+
+p {
+    color: #9CB8C8;
+}
+#like-buttons > ul {
+    list-style-type:none;
+}
+#like-buttons > ul li {
+    float:left;
+    padding:5px;
+    margin-left:5px;
+    border:1px solid #9CB8C8;
+    height:25px;
+    width:25px;
+    line-height:25px;
+    text-align:center;  
+}
+#like-buttons a {
+    text-decoration:none;
+    color:#9CB8C8
+}
+#like-buttons > ul li a:hover{
+    color:white;
+}

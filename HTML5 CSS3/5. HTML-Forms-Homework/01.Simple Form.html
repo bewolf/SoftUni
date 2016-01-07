@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+    <meta charset="utf-8" />
+    <link href="01.Simple From Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Enter the system</h1>
+        <p>It is neccessary to login in Your account in order to sign in for a course.</p>
+        <div id="register-form">
+            <form>
+                <fieldset>
+                    <legend>ARE YOU NEW? <span>REGISTER</span></legend>
+                    <input type="text" placeholder="User name" required />
+                    <input type="email" placeholder="Email" required />
+                    <input type="password" placeholder="Password" required />
+                    <input type="password" placeholder="Confirm Password" required />
+                    <div id="register-form-button-holder">
+                        <button>Register</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div id="login-form">
+            <form>
+                <fieldset>
+                    <legend>ALREADY A STUDENT? LOGIN</legend>
+                    <input type="text" placeholder="User name" required />
+                    <input type="password" placeholder="Password" required />
+                    <label>
+                        <input id="remember-me" type="checkbox" placeholder="Remember me?" /> 
+						Remember me?
+                    </label>
+
+                    <div id="login-form-button-holder">
+                        <button>Login</button>
+                    </div>
+                    <div id="forgot-pass">
+                        <span><a href="#">Forgot-pass</a></span>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

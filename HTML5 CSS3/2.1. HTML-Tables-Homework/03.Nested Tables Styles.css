@@ -1,0 +1,10 @@
+﻿body table, body table tr, body table tr td {
+    border:1px solid black;
+}
+body table tr td table tr td {
+    font-size:80px;
+}
+body table tr td{
+    margin:10px;
+    padding:10px;
+}

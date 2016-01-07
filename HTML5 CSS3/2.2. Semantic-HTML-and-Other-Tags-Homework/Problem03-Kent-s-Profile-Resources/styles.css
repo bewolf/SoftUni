@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFC0CB;
+}
+#wrapper{
+    width:960px;
+    margin: 0 auto;
+}
+#wrapper > header > h1 {
+    text-align: center;
+}
+#profile-info {
+    width: 25%;
+    float: left;
+}
+#audio-info{
+    float: left;
+    width: 35%;
+}
+#audio-info audio {
+    float:left;
+}
+#video-info{
+    float: left;
+    width: 40%;
+}

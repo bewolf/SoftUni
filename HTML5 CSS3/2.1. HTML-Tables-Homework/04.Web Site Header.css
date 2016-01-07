@@ -1,0 +1,26 @@
+﻿body table {
+    background-color:#234465;
+    margin:0;
+    padding:0;
+    display:block;
+    font-family:Lato;
+    font-weight:bold;
+}
+body > table > tbody > tr > td.softuni-logo{
+    padding-right:250px;
+}
+body table tr td a {
+    text-decoration:none;
+    color:#8FA0B0;
+}
+body table tr td a:hover {
+    color:#fff;
+}
+body table tr td ul {
+    list-style-type:none;
+    text-transform:uppercase;
+    color:#FFA000;
+}
+body table tr td ul li:hover{
+    text-decoration:underline;
+}

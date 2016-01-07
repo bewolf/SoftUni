@@ -1,0 +1,52 @@
+﻿body {
+    font-size: 20px;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+form {
+    background-image: url('resources/formBackground.jpg');
+    margin: 0 auto;
+    width: 45%;
+    padding: 15px;
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    color: white;
+    font-size: 1.2em;
+}
+
+fieldset > div {
+    background-color: rgba(255,255,255, 0.3);
+    border:1px solid white;
+    border-radius:5px;
+    margin-bottom:5px;
+    padding:5px;
+    text-align:center;
+}
+span{
+    display:inline-block;
+    float:left;
+}
+input{
+    padding:4px;
+}
+button{
+    height:30px;
+    width:100px;
+    color:white;
+    background-color:black;
+    border-radius:15px;
+    border:1px solid black;
+}
+div.button-holder{
+    text-align:center;
+}
+

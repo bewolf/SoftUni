@@ -1,0 +1,87 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>03.Styling a HTML Form</title>
+    <meta charset="utf-8" />
+    <link href="03.Styling-a-HTML-Form.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <form>
+            <fieldset>
+                <legend>Step 1: Your details</legend>
+                <div>
+                    <span>Name</span>
+                    <input title="name" type="text" placeholder="First and last name" />
+                </div>
+                <div>
+                    <span>Email</span>
+                    <input title="email" type="email" placeholder="example@domain.com" />
+                </div>
+                <div>
+                    <span>Phone</span>
+                    <input type="phone" title="phone" placeholder="eg. +447500000000" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Step 1: Delivery adress</legend>
+                <div>
+                    <span>Adress</span>
+                    <input title="adress" type="text" />
+                </div>
+                <div>
+                    <span>Post code</span>
+                    <input title="post-code" type="text" />
+                </div>
+                <div>
+                    <span>Country</span>
+                    <input title="country" type="text" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Step 1: Card details</legend>
+                <div>
+                    <span> Card type</span> <br />
+                    <label>
+                        <input title="card-type" type="radio" name="card" value="VISA" />
+                        <i>
+                            <img src="resources/visa.jpg" />
+                            VISA
+                        </i>
+                    </label>
+                    <label>
+                        <input title="card-type" type="radio" name="card" value="AmEx" />
+                        <i>
+                            <img src="resources/AmEx.jpg" />
+                            AmEx
+                        </i>
+                    </label>
+                    <label>
+                        <input title="card-type" type="radio" name="card" value="Mastercard" />
+                        <i>
+                            <img src="resources/master-card.jpg" />
+                            Mastercard
+                        </i>
+                    </label>
+                </div>
+                <div>
+                    <span>Card number</span>
+                    <input title="country" type="text" />
+                </div>
+                <div>
+                    <span>Security code</span>
+                    <input title="country" type="text" />
+                </div>
+                <div>
+                    <span>Name on card</span>
+                    <input title="country" type="text" placeholder="exact name as on the card" />
+                </div>
+            </fieldset>
+            <div class="button-holder">
+                <button>BUY IT!</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

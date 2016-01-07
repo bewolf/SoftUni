@@ -1,0 +1,77 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Order</title>
+    <meta charset="utf-8" />
+    <link href="02.Flight Order.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <h1>FLIGHT ORDER</h1>
+        <form>
+            <fieldset id="from">
+
+                <label id="from-city-label" for="from-city">From</label>
+                <select name="from-city" id="from-city" autofocus>
+                    <option value="enter" selected>enter a city</option>
+                    <option value="SOF">Sofia</option>
+                    <option value="VAR">Varna</option>
+                    <option value="PLO">Plovdiv</option>
+                    <option value="MEL">Melnik</option>
+                </select>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <label for="from-date">Departure Date</label>
+                <input type="date" id="from-date" />
+
+
+                <label for="to-date">Return Date</label>
+                <input type="date" id="to-date" />
+
+
+                <label id="12plus-label" for="12plus">12+</label>
+                <label id="from2to12-label" for="from2to12">2-12</label>
+                <label id="to2-label" for="to2">12+</label>
+
+                <input id="12plus" name="12plus" type="number" min="0" max="15" />
+                <input id="from2to12" name="from2to12" type="number" min="0" max="15" />
+                <input id="to2" name="to2" type="number" min="0" max="15" />
+
+
+            </fieldset>
+            <fieldset>
+                <label for="to-city">To</label>
+                <select name="to-city" id="to-city">
+                    <option value="enter">enter a city</option>
+                    <option value="SOF">Sofia</option>
+                    <option value="VAR">Varna</option>
+                    <option value="PLO">Plovdiv</option>
+                </select>
+
+                <label for="prefer">
+                    <input id="prefer" type="checkbox" />
+                Prefer directs</label>
+
+                <label for="time-interval-from">Time Interval</label>
+                <input type="time" id="time-interval-from-start" />
+                <input type="time" id="time-interval-from-end" />
+
+                <label for="time-interval-to">Time Interval</label>
+                <input type="time" id="time-interval-to-start" />
+                <input type="time" id="time-interval-to-end" />
+
+                <label for="class">Choose class</label>
+                <select name="class" id="class">
+                    <option value="1st" selected>First class</option>
+                    <option value="bus">Bussiness class</option>
+                    <option value="eco">Economy</option>
+                    <option value="2nd">Second class</option>
+                </select>
+
+                <input id="search-button" type="button" value="Search" />
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

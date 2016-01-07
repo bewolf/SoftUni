@@ -1,0 +1,41 @@
+﻿body {
+    background-image: url('Pictures/power point slide background.png');
+    color: #fff;
+    font-size: 20px;
+    font-family: Calibri;
+    font-weight:bold;
+}
+
+    body h1 {
+        color: #F2B254;
+    }
+
+    body ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        body ul li {
+            padding-left: 1em;
+            text-indent: -.7em;
+            font-size: 1.3em;
+        }
+
+            body ul li::before {
+                content: "■ ";
+                color: #F2B254;
+            }
+
+            body ul li span {
+                color: #F2B254;
+            }
+            body ul div {
+                line-height:10px;
+                background-color:rgba(55, 55, 55, 0.8);
+                border:2px solid rgb(92, 92, 92);
+                width:85%;
+                margin-left:5%;
+                padding-left:5px;
+
+            }

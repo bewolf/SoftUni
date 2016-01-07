@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Website footer</title>
+    <meta charset="utf-8" />
+    <link href="02.Website Footer.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="fast-buttons">
+            <button>Apply Now</button>
+            <button> Fast track courses</button>
+        </div>
+        <div id="about-uni">
+            <h3>About the university</h3>
+            <ul>
+                <li>About</li>
+                <li>Professions</li>
+                <li>Plans</li>
+                <li>Patner universities</li>
+                <li>Trainers</li>
+                <li>Dorms</li>
+                <li>Apply</li>
+            </ul>
+        </div>
+        <div id="our-friends">
+            <h3>Нашите приятели</h3>
+            <ul>
+                <li>Svetlin Nakov Blog</li>
+                <li>C# Book</li>
+            </ul>
+        </div>
+        <div id="suls">
+            <h3>Software University Learning System - 1.0.5287</h3>
+            <p>&reg; 2013-2015 - Software University. All Rights Reserved</p>
+            <div id="like-buttons">
+                <ul>
+                    <a href="https://www.facebook.com/search/top/?q=software%20university"><li>f</li></a>
+                    <a href="https://twitter.com/softunibg"> <li>tw</li></a>
+                    <a href="https://plus.google.com/+SoftuniBg/posts"> <li>g+</li></a>
+                </ul>
+            </div>
+        </div>
+        <div id="fb-root"></div>
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+    </div>
+</body>
+</html>
