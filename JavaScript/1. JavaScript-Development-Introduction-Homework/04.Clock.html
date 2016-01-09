@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Clock</title>
+</head>
+<body>
+<h2>The current time is:</h2>
+
+<div id="timer">
+</div>
+
+<script>
+    function setTime() {
+        var time = new Date();
+        var hours = time.getHours();
+        if (hours < 10) {
+            hours = "0" + hours;
+        }
+        var minutes = time.getMinutes();
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+        var seconds = time.getSeconds();
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
+        document.getElementById("timer").innerHTML = hours + " : " + minutes + " : " + seconds;
+    }
+    timer = setInterval(setTime, 1000);
+</script>
+</body>
+</html>
