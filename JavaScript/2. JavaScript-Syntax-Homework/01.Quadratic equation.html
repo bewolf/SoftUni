@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01. Quadratic equation</title>
+</head>
+<script>
+function findRoots() {
+    var a = parseInt(document.getElementById("a").value);
+    var b = parseInt(document.getElementById("b").value);
+    var c = parseInt(document.getElementById("c").value);
+    var discriminant = b*b - 4*a*c;
+
+    if (discriminant === 0){
+        var x = - (b/ (2*a));
+        document.write("X = " + x);
+    } else if (discriminant < 0) {
+        document.write("No real rots");
+    } else {
+        var x1 = (-b + Math.sqrt(discriminant)) / (2*a);
+        var x2 = (-b - Math.sqrt(discriminant)) / (2*a);
+        document.write("X1 = " + x1 + "<br/>" + "X2 = " + x2);
+    }
+}
+
+</script>
+<body>
+<form>
+    <label for="a">Enter a  </label>
+    <input type="text" id="a">
+    <label for="b">Enter b  </label>
+    <input type="text" id="b">
+    <label for="c">Enter c  </label>
+    <input type="text" id="c">
+    <input type="button" id="submit" value="Submit" onclick="findRoots()">
+</form>
+</body>
+</html>
