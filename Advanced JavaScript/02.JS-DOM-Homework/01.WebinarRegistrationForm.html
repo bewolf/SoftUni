@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01 Webinar registration form</title>
+
+    <style>   /*Целенасочено не съм си играл да направя пиксел пърфект формата, защото задачата е за работеща функционалност.*/
+    #wrapper {
+        width: 960px;
+        margin: 0 auto;
+        align-content: center;;
+    }
+
+    body form {
+        width: 250px;
+        text-align: center;
+    }
+
+    body form label, body form input {
+        text-align: left;
+        display: block;
+        width: 100%;
+        margin-bottom: 2px;
+    }
+
+    #invoiceInfo {
+        visibility: hidden;
+    }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <h1>Регистрация за уебинар</h1>
+
+    <form>
+        <label for="name">Име и фамилия:</label>
+        <input type="text" id="name" required>
+        <label for="adress">Адрес:</label>
+        <input type="text" id="adress">
+        <label for="livingPlace">Населено място:</label>
+        <input type="text" id="livingPlace">
+        <label for="postCode">Пощенски код</label>
+        <input type="text" id="postCode">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" required>
+        <label for="date">Дата на семинара</label>
+        <input type="date" id="date" required>
+        <input type="checkbox" id="invoice" value="yes" name="invoice">
+        <label for="invoice">Желая фактура</label>
+
+        <div id="invoiceInfo">
+            <label for="firm">Фирма/Организация</label>
+            <input type="text" id="firm" required>
+            <label for="MOL">МОЛ:</label>
+            <input type="text" id="MOL" required>
+            <label for="EIK">ЕИК:</label>
+            <input type="text" id="eik" required>
+            <label for="DDS">ИН по ДДС:</label>
+            <input type="text" id="dds" required>
+            <label for="firmAdress">Адрес:</label>
+            <input type="text" id="firmAdress" required>
+        </div>
+        <input type="button" value="Регистрирай се">
+        <input type="reset" value="Изчисти">
+    </form>
+    <script src="01.WebinarResigrationFrom.js"></script>
+
+</div>
+</body>
+</html>
