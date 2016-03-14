@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02 Poll</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<form>
+    <h2>What is your age</h2>
+    <input type="radio" name="age-range" id="age10_16" value="10 - 16">
+    <label for="age10_16">10 - 16</label>
+    <input type="radio" name="age-range" id="age16_25" value="16 - 25">
+    <label for="age16_25">16 - 25</label>
+    <input type="radio" name="age-range" id="age25_35" value="25 - 35">
+    <label for="age25_35">25 - 35</label>
+    <input type="radio" name="age-range" id="age35over" value="35+">
+    <label for="age35over">35+</label>
+
+    <h2>Where do you live</h2>
+    <input type="radio" name="liveCity" id="sofia" value="Sofia">
+    <label for="sofia">Sofia</label>
+    <input type="radio" name="liveCity" id="plovdiv" value="Plovdiv">
+    <label for="plovdiv">Plovdiv</label>
+    <input type="radio" name="liveCity" id="varna" value="Varna">
+    <label for="varna">Varna</label>
+    <input type="radio" name="liveCity" id="burgas" value="Burgas">
+    <label for="burgas">Burgas</label>
+
+    <h2>Favorite language</h2>
+    <input type="radio" name="programmingLang" id="js" value="Java Script">
+    <label for="js">Java Script</label>
+    <input type="radio" name="programmingLang" id="CSharp" value="C Sharp">
+    <label for="CSharp">C#</label>
+    <input type="radio" name="programmingLang" id="java" value="Java">
+    <label for="java">Java</label>
+    <input type="radio" name="programmingLang" id="python" value="Python">
+    <label for="python">Python</label>
+
+</form>
+<button class="submit" type="button">Submit</button>
+<div id="counter"></div>
+
+<div id="results"></div>
+<script src="scripts/jquery-2.2.1.js"></script>
+<script src="scripts/timer.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>

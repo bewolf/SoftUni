@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#books {
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#books ul {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+#books ul li:hover {
+    cursor: pointer;
+}
+#books ul li:first-child{
+    font-weight: bold;
+}
+#books ul li span, #books ul li button {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+}
+
+input, button {
+    width: 30%;
+    margin: 0.5%;
+    padding: 3px;
+}

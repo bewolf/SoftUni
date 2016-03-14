@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+label {
+    width: 85%;
+    display: inline-block;
+    margin: 0;
+}
+
+input {
+    width: 10%;
+    margin: 0;
+    display: inline-block;
+}
+
+.submit {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#counter {
+    margin: 10px auto;
+    height: 30px;
+    font-size: 1.6em;
+    text-align: center;
+    background: greenyellow;
+    width: 150px;
+}

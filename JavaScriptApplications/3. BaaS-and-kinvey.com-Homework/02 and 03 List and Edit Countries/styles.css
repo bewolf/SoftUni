@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+
+#showCountries, #addCountry, #deleteCountry, #editCountry {
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#countries {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#countries span {
+    font-style: italic;
+    font-size: 1.1em;
+}
