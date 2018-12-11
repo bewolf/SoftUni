@@ -12,7 +12,7 @@ for ($i = 1; $i < count($lane); $i++) {
         $currentSecc++;
         if ($theMostSeq < $currentSecc){
             $theMostSeq = $currentSecc;
-            $theMostNum = $currentNumber;
+            $theMostNum = key($lane);
         }
     } else {
         $currentSecc = 1;
