@@ -1,6 +1,4 @@
 <?php
-
-
 function dayOfWeek($day)
 {
     switch ($day) {
@@ -30,5 +28,4 @@ function dayOfWeek($day)
             break;
     }
 }
-
 dayOfWeek(readline());
