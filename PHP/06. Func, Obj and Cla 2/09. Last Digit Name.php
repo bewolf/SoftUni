@@ -24,9 +24,9 @@ class Number
     }
 
 
-    function lastDigitName($number)
+    public function lastDigitName()
     {
-        $lastDigit = $number % 10;
+        $lastDigit = $this->number % 10;
         switch ($lastDigit) {
             case 0:
                 echo "zero";
