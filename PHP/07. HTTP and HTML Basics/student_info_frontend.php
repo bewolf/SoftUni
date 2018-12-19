@@ -9,8 +9,8 @@
     <div>
         Delimeter:
         <select name="delimeter" id="">
-            <option value=",">,</option>
             <option value="|">|</option>
+            <option value=",">,</option>
             <option value="&">&</option>
         </select>
     </div>
@@ -33,15 +33,18 @@
             <th>Age</th>
             </thead>
             <tbody>
-            <?php for ($i = 0; $i < count($studentNames); $i++): ?>
-            <tr>
-                <td><?= $studentNames[$i]; ?> </td>
-                <td><?= $studentAges[$i]; ?></td>
-            </tr>
+            <?php for ($count = 0; $count < count($studentNames); $count++): ?>
+                <tr>
+                    <td><?= $studentNames[$count]; ?></td>
+                    <td><?= $studentAges[$count]; ?></td>
+                </tr>
             <?php endfor; ?>
             </tbody>
         </table>
     <?php endif; ?>
+    <a href="?next=1" name="next">Next</a><br>
+    <a href="" name="previous">Previous </a>
+
 </form>
 </body>
 </html>

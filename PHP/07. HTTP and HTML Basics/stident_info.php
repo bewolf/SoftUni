@@ -6,12 +6,16 @@ if (isset($_POST['filter'])) {
     $delimeter = $_POST['delimeter'];
     $studentNames = explode($delimeter, $names);
     $studentAges = (explode($delimeter, $ages));
-
+    $next = $_GET['next'];
     for ($i = 0; $i < count($studentAges); $i++) {
         if ($studentAges[$i] < 18) {
             unset($studentAges[$i]);
             unset($studentNames[$i]);
         }
+    }
+
+    if ($next == '1'){
+        var_dump($studentNames);
     }
 
 }
