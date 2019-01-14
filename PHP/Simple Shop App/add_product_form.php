@@ -1,4 +1,6 @@
 <h2>Add product</h2>
+
+
 <form method="post">
     Product name:<input type="text" name="product_name"><br>
     Product price:<input type="text" name="product_price"><br>
@@ -7,8 +9,25 @@
     Product category
     <select name="" id="">
         <option value=""></option>
-        <option value="">Hardcoded option</option>
-    </select>
-   <br> <input type="submit" value="Add product">
 
+        <?php
+        spl_autoload_register();
+        $database = new ConnectDB();
+
+        $result = $database->DBConnect();
+        $sql = $result->prepare("SELECT category_id,
+                                          category_name
+                                          FROM categories");
+        $sql->execute();
+
+        while ($result = $sql->fetch(PDO::FETCH_ASSOC)) {
+            $name = $result['category_name'];
+            $cat_id = $result['category_id'];
+
+            echo '<option>' . $name . '</option>';
+        }
+        ?>
+    </select>
+
+    <br> <input type="submit" value="Add product">
 </form>

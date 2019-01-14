@@ -29,5 +29,4 @@ while ($result = $sql->fetch(PDO::FETCH_ASSOC)) {
         'Created' . $create_date;
 }
 
-
 include "footer.php";
