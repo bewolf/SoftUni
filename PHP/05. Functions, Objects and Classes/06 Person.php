@@ -6,5 +6,5 @@ class Person
     public $age;
 }
 
-$ivan = new Person();
+$ivan = new Persona();
 echo(count(get_object_vars($person)));

@@ -14,4 +14,4 @@ class Person
 }
 $name = readline();
 $age = readline();
-$ivan = new Person($name, $age );
+$ivan = new Persona($name, $age );

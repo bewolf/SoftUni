@@ -1,6 +1,6 @@
 <?php
-if (isset($_GET['person'])){
-    $name = $_GET['person'];
+if (isset($_GET['Persona'])){
+    $name = $_GET['Persona'];
 
     echo 'Hello, ' . $name . '!';
 }

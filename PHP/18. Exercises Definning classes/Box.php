@@ -29,8 +29,41 @@ class Box
      */
     public function __construct(float $length, float $width, float $height)
     {
-        $this->lenght = $length;
+        $this->setLenght($length);
+        $this->setWidth($width);
+        $this->setHeight($height);
+    }
+
+    /**
+     * @param float $lenght
+     */
+    private function setLenght(float $lenght)
+    {
+        if ($lenght <= 0){
+            throw new Exception('Lenght can not be zero or negative');
+        }
+        $this->lenght = $lenght;
+    }
+
+    /**
+     * @param float $width
+     */
+    private function setWidth(float $width)
+    {
+        if ($width <= 0){
+            throw new Exception('Width can not be zero or negative');
+        }
         $this->width = $width;
+    }
+
+    /**
+     * @param float $height
+     */
+    private function setHeight(float $height)
+    {
+        if ($height <= 0){
+            throw new Exception('Heigth can not be zero or negative');
+        }
         $this->height = $height;
     }
 
