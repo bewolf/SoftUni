@@ -7,7 +7,7 @@
     Product description:<input type="text" name="product_description"><br>
 
     Product category
-    <select name="" id="">
+    <select name="cat_id">
         <option value=""></option>
 
         <?php
@@ -24,7 +24,7 @@
             $name = $result['category_name'];
             $cat_id = $result['category_id'];
 
-            echo '<option>' . $name . '</option>';
+            echo '<option value=' . $cat_id . '>' . $name . '</option>';
         }
         ?>
     </select>

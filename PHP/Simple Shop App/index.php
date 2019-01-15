@@ -23,10 +23,10 @@ while ($result = $sql->fetch(PDO::FETCH_ASSOC)) {
                   <td >' . $price . '</td >
                   <td><a href="view_product.php?product_id=' . $number . '">View</a></td>
                   <td><a href="?product_id=' . $number . '">Delete</a></td>
-                  <td><a href="view_product.php?edit_product=' . $number . '">Edit</a></td>
+                  <td><a href="edit_product.php?product_form=edit&product_id=' . $number . '" >Edit</a></td>
           </tr >';
 }
-echo '<tr><td><a href="edit_product.php?edit_product=add">Add product</a></td></tr>';
+echo '<tr><td><a href="edit_product.php?product_form=add">Add product</a></td></tr>';
 echo '</table>';
 
 if (isset($_GET['product_id'])) {

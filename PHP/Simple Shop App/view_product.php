@@ -12,7 +12,8 @@ $sql = $result->prepare("SELECT product_id,
                                           product_price,
                                           product_create_date
                                   FROM shop.products
-                                  WHERE product_id= $product_id");
+                                  WHERE product_id= :product_id");
+$sql->bindParam(':product_id', $product_id);
 $sql->execute();
 
 while ($result = $sql->fetch(PDO::FETCH_ASSOC)) {

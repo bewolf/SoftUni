@@ -6,7 +6,8 @@ class DeleteProduct
     {
         $database = new ConnectDB();
         $result = $database->DBConnect();
-        $sql = $result->prepare("DELETE FROM products WHERE product_id=$id");
+        $sql = $result->prepare("DELETE FROM products WHERE product_id=:id");
+        $sql->bindParam(':id', $id);
         $sql->execute();
         return $result;
     }
