@@ -27,11 +27,11 @@ class Persona
      * @param float $money
      * @param array $bagOfProducts
      */
-    public function __construct(string $name = '', float $money = 0, array $bagOfProducts = [])
+    public function __construct(string $name = '', float $money = 0)
     {
         $this->setName($name);
         $this->setMoney($money);
-        $this->setBagOfProducts($bagOfProducts);
+        $this->bagOfProducts = [];
     }
 
     /**
@@ -51,14 +51,6 @@ class Persona
             throw new Exception('Money can not be negative');
         }
         $this->money = $money;
-    }
-
-    /**
-     * @param array $bagOfProducts
-     */
-    private function setBagOfProducts(array $bagOfProducts)
-    {
-        $this->bagOfProducts = $bagOfProducts;
     }
 
     public function fill($name, $money)

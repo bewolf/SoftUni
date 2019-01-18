@@ -68,19 +68,19 @@ class Box
     }
 
 
-    public function volume()
+    public function volume() :float
     {
         $volume = $this->width * $this->height * $this->lenght;
         echo "Volume - " . number_format($volume, 2) . "\n";
     }
 
-    public function lateralSurfaceArea()
+    public function lateralSurfaceArea() :float
     {
         $lateralSurfaceArea = 2 * $this->height * $this->lenght + 2 * $this->width * $this->height;
         echo "Lateral Surface Area - " . number_format(round($lateralSurfaceArea, 2), 2) . "\n";
     }
 
-    public function surfaceArea()
+    public function surfaceArea() :float
     {
         $surfaceArea = 2 * $this->height * $this->lenght + 2 * $this->width * $this->height + 2 * $this->lenght * $this->width;
         echo "Surface Area - " . number_format(round($surfaceArea, 2), 2) . "\n";

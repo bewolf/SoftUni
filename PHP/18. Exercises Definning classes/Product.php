@@ -41,6 +41,9 @@ class Product
      */
     public function setCost(float $cost)
     {
+        if ($cost < 0) {
+            throw new Exception("Money can not be negative");
+        }
         $this->cost = $cost;
     }
 

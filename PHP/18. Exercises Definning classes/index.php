@@ -19,15 +19,13 @@ $users = explode(';', rtrim(readline(), ';'));
 $products = explode(';', rtrim(readline(), ';'));
 
 $persons = new Persona();
-$productsObj = new Product();
-
+$productsObj =[];
 foreach ($users as $user) {
     $user_data = explode('=', $user);
     $user_name = $user_data[0];
     $user_money = $user_data[1];
 
     $persons->fill($user_name, $user_money);
-    print_r($persons);
 }
 
 foreach ($products as $product) {
@@ -35,8 +33,21 @@ foreach ($products as $product) {
     $product_name = $product_data[0];
     $product_cost = $product_data[1];
 
-    $productsObj->fill($product_name, $product_cost);
+    $allProducts =  new Product($product_name, $product_cost);
+
+    print_r($allProducts);
+}
+
+$input = explode(' ', readline());
+
+while ($input[0] != 'END') {
+    $username = $input[0];
+    $product = $input[1];
+    $current_product_price = $productsObj->getCost();
+    echo ("$username, $product \n");
+    echo("$current_product_price");
 
 
-    print_r($productsObj);
+    $input = explode(' ', readline());
+
 }
